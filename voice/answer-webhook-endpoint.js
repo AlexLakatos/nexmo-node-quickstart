@@ -15,7 +15,12 @@ app.get('/answer-webhook', function (req, res) {
   var ncco = [
     {
       action: 'talk',
-      text: 'Hello from Nexmo!'
+      text: 'Input a digit!'
+    }, 
+    {
+      "action": "input",
+      "eventUrl": ["https://example.com/answer-webhook"],
+      "eventMethod": "GET"
     }
   ];
 
